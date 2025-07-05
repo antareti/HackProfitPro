@@ -8,15 +8,15 @@
 </head>
 <body>
 
-  <!-- Фоновое видео -->
-  <video autoplay muted loop id="bgVideo">
-    <source src="1.mp4" type="video/mp4" />
-    Ваш браузер не поддерживает видео.
-  </video>
+  <!-- Задний затемнённый фон -->
+  <div class="dark-background"></div>
 
-  <!-- Изображение интерфейса по центру -->
-  <div class="video-overlay">
-    <img src="73897714-d511-45fb-bc11-aed732dafdbc.png" alt="Интерфейс" />
+  <!-- Видео по центру -->
+  <div class="center-video">
+    <video autoplay muted loop playsinline>
+      <source src="1.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
   </div>
 
   <!-- Навигация -->
@@ -31,7 +31,7 @@
     </nav>
   </header>
 
-  <!-- Основной текст -->
+  <!-- Кнопка и описание -->
   <main>
     <h1>Автоматизируй Заработок.</h1>
     <p class="subtitle">
