@@ -1,41 +1,42 @@
-/* Общие стили */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  background-color: #000;
+  background-color: #0a0a0a;
   overflow: hidden;
   color: #fff;
 }
 
-/* Видео на фоне */
-#bgVideo {
+/* Затемнённый фон */
+.dark-background {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #1a1a2e, #0a0a0a 80%);
+  z-index: -2;
 }
 
-/* Центрированное изображение поверх видео */
-.video-overlay {
+/* Центрированное видео */
+.center-video {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 90vw;
-  max-height: 90vh;
   z-index: 1;
+  width: 90vw;
+  max-width: 900px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
 }
-.video-overlay img {
+
+.center-video video {
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  display: block;
 }
 
 /* Навигация */
@@ -44,7 +45,7 @@ header {
   top: 0;
   width: 100%;
   padding: 10px 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 nav ul {
@@ -61,7 +62,7 @@ nav a {
   font-weight: bold;
 }
 
-/* Основной контент */
+/* Текст и кнопка */
 main {
   position: absolute;
   bottom: 30px;
