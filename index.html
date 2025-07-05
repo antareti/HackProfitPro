@@ -4,12 +4,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HackProfit — Автоматизируй заработок</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding-top: 200px; /* Adjust this value based on the height of your header image */
+      font-family: sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Ensure header is above other content */
+      background-color: #fff; /* Add a background color if your image is transparent */
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav {
+      background-color: #333; /* Example background for navigation */
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .inline-video {
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    .inline-video video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-    <img src="unnamed (16).png" alt="HackProfitPro Header" style="width:100%; height:auto; display:block;">
+  <header>
+    <img src="unnamed (16).png" alt="HackProfitPro Header">
     <nav>
       <ul>
         <li><a href="#">Главная</a></li>
@@ -20,10 +107,10 @@
     </nav>
   </header>
 
-    <main>
+  <main>
     <h1>Автоматизируй Заработок.</h1>
 
-        <div class="inline-video">
+    <div class="inline-video">
       <video src="1.mp4" autoplay muted loop playsinline></video>
     </div>
 
