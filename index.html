@@ -14,22 +14,27 @@
     body, html {
       background-color: #000;
       color: #fff;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
     }
 
     /* Чёткая шапка 1500x300 */
     header {
-      width: 1500px;
+      width: 100%; /* Changed to 100% for better responsiveness */
+      max-width: 1500px; /* Added max-width */
       height: 300px;
       background: rgba(0, 0, 0, 0.7);
-      margin: 1 auto;
+      margin: 10px auto; /* Centered with more margin */
       overflow: hidden;
       text-align: center;
+      border-radius: 10px; /* Added border-radius for softer edges */
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.3); /* Enhanced shadow */
     }
 
     header img {
       height: 200px; /* чтобы влезло */
       margin-top: 10px;
+      object-fit: contain; /* Ensures image fits without distortion */
     }
 
     nav ul {
@@ -45,6 +50,12 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
+      transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+    }
+
+    nav a:hover {
+      color: #00d0dd;
+      transform: translateY(-3px); /* Subtle lift effect on hover */
     }
 
     /* Контент */
@@ -56,44 +67,113 @@
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.8em; /* Slightly larger heading */
+      margin-bottom: 25px;
+      color: #00f0ff; /* Highlighted heading color */
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glowing text effect */
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin-top: 40px;
       margin-bottom: 20px;
+      color: #00f0ff;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    }
+
+    p {
+      font-size: 1.15em; /* Slightly larger paragraph text */
+      margin-bottom: 15px;
     }
 
     .subtitle {
-      font-size: 1.1em;
-      margin: 20px 0;
+      font-size: 1.25em; /* More prominent subtitle */
+      margin: 30px 0;
+      font-weight: 500;
+      color: #e0e0e0;
     }
 
     .button {
       display: inline-block;
       background-color: #00f0ff;
       color: #000;
-      padding: 12px 24px;
+      padding: 14px 28px; /* Larger button */
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      transition: 0.3s;
+      font-size: 1.1em; /* Larger button text */
+      transition: 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+      box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4); /* Button shadow */
     }
 
     .button:hover {
       background-color: #00d0dd;
+      transform: translateY(-5px); /* Lift and slight shift on hover */
+      box-shadow: 0 8px 20px rgba(0, 255, 255, 0.6);
     }
 
     /* Видео */
     .inline-video {
-      margin: 20px auto;
-      width: 500px;
+      margin: 30px auto; /* Adjusted margin */
+      width: 100%; /* Made video responsive */
+      max-width: 500px; /* Max width for larger screens */
       height: 700px;
-      border-radius: 12px;
+      border-radius: 15px; /* Softer corners for video container */
       overflow: hidden;
-      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 50px rgba(0, 255, 255, 0.4); /* Enhanced video shadow */
+      border: 3px solid #00f0ff; /* Glowing border */
     }
 
     .inline-video video {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        height: auto;
+        padding-bottom: 20px;
+      }
+      header img {
+        height: 150px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+      main {
+        padding: 0 15px;
+      }
+      h1 {
+        font-size: 2.2em;
+      }
+      h2 {
+        font-size: 1.8em;
+      }
+      .subtitle {
+        font-size: 1em;
+      }
+      .inline-video {
+        height: 500px; /* Adjust height for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 1em;
+      }
+      .inline-video {
+        height: 400px;
+      }
     }
   </style>
 </head>
@@ -119,9 +199,32 @@
     </div>
 
     <p class="subtitle">
-      Готовые инструменты, Telegram-боты и софт для онлайн-заработка. Всё в одном месте.
+      **Готовые инструменты, Telegram-боты и софт для онлайн-заработка.** Всё в одном месте.
     </p>
+
+    ---
+
+    <h2>HackProfit: Ваш Путь к Автоматизированному Заработку!</h2>
+    <p>Устали от рутины и ищете новые возможности для заработка? Представляем **HackProfit** — платформу, которая революционизирует ваш подход к онлайн-доходу!</p>
+    <p>На **HackProfit** вы найдете **готовые инструменты, Telegram-боты и специализированный софт**, разработанные для того, чтобы ваш заработок стал максимально автоматизированным и эффективным. Больше не нужно тратить часы на поиск и настройку: всё, что вам нужно для успешного старта, собрано в одном месте.</p>
+
+    ---
+
+    <h2>Почему HackProfit?</h2>
+    <p><strong>Готовые Решения:</strong> Забудьте о сложностях! Наши инструменты разработаны так, чтобы вы могли начать зарабатывать с минимальными усилиями.</p>
+    <p><strong>Автоматизация:</strong> Откройте для себя мир, где технологии работают на вас, высвобождая ваше время для более важных дел.</p>
+    <p><strong>Удобство:</strong> Все необходимые ресурсы находятся на одной платформе, доступной в любой момент.</p>
+    <p><strong>Поддержка Сообщества:</strong> Присоединяйтесь к нашему Telegram-каналу, чтобы быть в курсе последних обновлений, получать советы и общаться с единомышленниками.</p>
+
+    ---
+
+    <h2>Готовы изменить свой подход к заработку?</h2>
+    <p>Не упустите свой шанс! Начните свой путь к автоматизированному доходу с **HackProfit** уже сегодня.</p>
+
+    ---
+
     <a href="https://t.me/HackProfitPro" class="button" target="_blank">Перейти в Telegram</a>
+    <p style="margin-top: 20px;"><strong>Переходите в наш Telegram-канал прямо сейчас и откройте для себя новые горизонты в мире онлайн-заработка!</strong></p>
   </main>
 
 </body>
