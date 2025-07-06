@@ -6,7 +6,7 @@
   <title>HackProfit — Автоматизируй заработок</title>
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Общие стили */
+    /* Общие настройки */
     * {
       margin: 0;
       padding: 0;
@@ -21,19 +21,22 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Шапка фиксированного размера 1500x300 */
+    /* Шапка: строго 1500 x 300 */
     header {
       width: 1500px;
       height: 300px;
       background: rgba(0, 0, 0, 0.6);
       position: static;
       margin: 0 auto;
-      text-align: center;
-      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
     }
 
     header img {
-      max-height: 280px;
+      height: 180px; /* Вписываем в шапку */
       width: auto;
     }
 
@@ -41,8 +44,8 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      margin-top: 10px;
+      gap: 30px;
+      padding-bottom: 10px;
     }
 
     nav a {
