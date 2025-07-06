@@ -63,15 +63,18 @@ h1 {
   background-color: #00d0dd;
 }
 
-/* Видео по центру */
+/* Видео по центру и уменьшено */
 .inline-video {
   margin: 20px auto;
-  max-width: 800px;
+  width: 500px;
+  height: 700px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
 }
 .inline-video video {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
